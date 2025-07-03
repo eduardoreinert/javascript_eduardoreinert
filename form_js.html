@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples Validação</title>
+    <style>
+        form{
+            width: 500px;
+            margin: 20px auto;
+        }
+
+        fieldset{
+            padding: 30px;
+            border: solid 2px gray;
+        }
+
+        legend{
+            font-size: 24px;
+        }
+
+        label{
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        input[type=text]{
+            width: 314px;
+            height: 30px;
+        }
+
+        select{
+            margin-top: 20px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="meuForm" id="meuForm">
+        <fieldset>
+            <legend>Exemplo Básico de Formulário</legend>
+
+            <label>Nome*</label>
+            <input id="textbox1" name="textname" type="text"/>
+
+            <label>Cidade:</label>
+            <select name="cidades" id="cidades">
+                <option value=" ">Selecione uma Cidade</option>
+                <option value="Opção 1">Joinville-SC</option>
+                <option value="Opção 2">Curitiba-PR</option>
+                <option value="Opção 3">Florianópoles-SC</option>
+                <option value="Opção 4">Porto Alegre-RS</option>
+            </select>
+            <p>
+                <label>Sexo:</label>
+                <input name="sexo" type="radio" value="masculino"/>Masculino
+                <input name="sexo" type="radio" value="feminino"/>Feminino
+            </p>
+
+            <p>
+                <label>Rede Social:</label>
+                <input name="rede" type="checkbox" value="facebook"/>Facebook
+                <input name="rede" type="checkbox" value="twitter"/>Twitter
+                <input name="rede" type="checkbox" value="orkut"/>Orkut
+                <input name="rede" type="checkbox" value="msn"/>MSN
+                <input name="rede" type="checkbox" value="tiktok"/>TikTok
+            </p>
+
+            <p>
+                <input id="botaosub" type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript" src="js/validacao_form.js">
+
+    </script>
+</body>
+</html>
